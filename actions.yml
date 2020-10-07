@@ -1,0 +1,16 @@
+name: webapi-pr-validator
+author: TeamWebAPI <dl-WebAPI@dr.dk>
+description: Validate title of PRs to follow the conventional specification. (https://www.conventionalcommits.org/).
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  prod:
+    description: 'List of types that require Jira Ids (as comma seperated string)'
+    required: false
+  preprod:
+    description: 'List of types that require Commit Ids (as comma seperated string)'
+    required: false
+  test:
+    description: 'List of types that require Commit Ids (as comma seperated string)'
+    required: false
