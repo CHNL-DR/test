@@ -9,6 +9,4 @@ async function run() {
     console.log(`The event payload: ${payload}`);
 }
 
-// Another change
 run().catch(console.error);
-
